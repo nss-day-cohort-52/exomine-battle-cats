@@ -2,7 +2,7 @@
 Generate HTML for governor dropdown based on current state
 Listen for change in user selection and set state based on user input
  */
-import { getGovernors } from "./database.js";
+import { getGovernors, setGovernor } from "./database.js";
 
 const governors = getGovernors()
 
@@ -10,7 +10,7 @@ document.addEventListener(
     "change",
     (event) => {
         if (event.target.id === "governor") {
-            window.alert(`${event.target.value}`)
+            setGovernor(parseInt(event.target.value))
         }
     }
 )

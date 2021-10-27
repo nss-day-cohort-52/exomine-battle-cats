@@ -205,7 +205,10 @@ const database = {
 export const getGovernors = () => {
     return database.governors.map(governors => ({ ...governors }))
 }
-
+export const setGovernor = (governorId) => {
+    database.transientState.governorId = governorId
+    // document.dispatchEvent(new CustomEvent("stateChanged"))
+}
 
 export const setFacility = (facilityId) => {
     database.transientState.selectedFacility = facilityId
