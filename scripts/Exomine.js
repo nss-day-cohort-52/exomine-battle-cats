@@ -2,36 +2,40 @@
 
 export const Exomine = () => {
   return `
-  <div class="header flex row">
-    <h1 class="heading1 text-center flex">Exomine</h1>
-  </div>
+  <section class="flex column top-section">
+    <div class="header flex row">
+      <h1 class="heading1 text-center flex">Exomine</h1>
+    </div>
 
-  <div class="content flex column">
-
-    <section class="top-section flex row">
+    <section class="flex row">
       <article class="governors container flex column">
+      <h2 class="heading2 text-center flex">Select a Governor</h2>
 
       </article>
       <article class="colony-minerals container flex column">
+      <h2 class="heading2 text-center flex">Colony Minerals</h2>
 
       </article>
 
     </section>
 
-    <section class="bottom-section flex row">
-      <article class="facilities container flex column">
+  </section>
 
-      </article>
+  <section class="bottom-section flex row">
+    <article class="facilities container flex column">
+    <h2 class="heading2 text-center flex">Select a Facility</h2>
 
-      <article class="facility-minerals container flex column">
+    </article>
 
-      </article>
+    <article class="facility-minerals container flex column">
+    <h2 class="heading2 text-center flex">Available Facility Minerals</h2>
 
-      <article class="cart container flex column">
+    </article>
 
-      </article>
+    <article class="cart container flex column">
+      <h2 class="heading2 text-center flex">Cart</h2>
+    </article>
 
-    </section>
-  </div>
+  </section>
   `
 }
