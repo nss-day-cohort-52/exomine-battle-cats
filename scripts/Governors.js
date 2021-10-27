@@ -6,6 +6,15 @@ import { getGovernors } from "./database.js";
 
 const governors = getGovernors()
 
+document.addEventListener(
+    "change",
+    (event) => {
+        if (event.target.id === "governor") {
+            window.alert(`${event.target.value}`)
+        }
+    }
+)
+
 export const Governors = () => {
     return `
         <div class="governorDropdown">
@@ -13,7 +22,9 @@ export const Governors = () => {
             <select id="governor">
             <option value="0">Select a governer...</option>
                 ${governors.map(governor =>
-        `<option>${governor.name}</option>
+        `<option value="${governor.id}">
+                    ${governor.name}
+                    </option>
                 `)
         }
             </select>
