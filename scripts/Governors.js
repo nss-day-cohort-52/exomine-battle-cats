@@ -10,7 +10,13 @@ export const Governors = () => {
     return `
         <div class="governorDropdown">
             <label>Select a governor</label>
-            ${governors.map(governor => governor.name)}
+            <select id="governor">
+            <option value="0">Select a governer...</option>
+                ${governors.map(governor =>
+        `<option>${governor.name}</option>
+                `)
+        }
+            </select>
         </div>
     `
 }
