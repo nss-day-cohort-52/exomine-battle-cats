@@ -1,0 +1,3 @@
+/*
+Generate HTML for colonyMinerals related to the selected mineralFacility based on users input
+Listen for click on the order button and set state based on user input */
