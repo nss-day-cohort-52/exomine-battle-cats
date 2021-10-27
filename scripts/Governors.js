@@ -4,8 +4,11 @@ Listen for change in user selection and set state based on user input
  */
 import { getGovernors, setGovernor } from "./database.js";
 
+
 const governors = getGovernors()
 
+
+// EventListener to listen for change in governors dropdown and set state once updated  
 document.addEventListener(
     "change",
     (event) => {
@@ -15,7 +18,9 @@ document.addEventListener(
     }
 )
 
+// Function that returns generated HTML for governors dropdown
 export const Governors = () => {
+
     return `
         <div class="governorDropdown">
             <label>Select a governor</label>

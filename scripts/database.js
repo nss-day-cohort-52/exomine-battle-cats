@@ -202,9 +202,12 @@ const database = {
         }
     ]
 }
+//Function whose value returns a copy of the governors array
 export const getGovernors = () => {
     return database.governors.map(governors => ({ ...governors }))
 }
+
+//Function to track what the user selected and add the governorId property to the transientState object
 export const setGovernor = (governorId) => {
     database.transientState.governorId = governorId
     // document.dispatchEvent(new CustomEvent("stateChanged"))
