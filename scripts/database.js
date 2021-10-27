@@ -202,6 +202,10 @@ const database = {
         }
     ]
 }
+export const getGovernors = () => {
+    return database.governors.map(governors => ({ ...governors }))
+}
+
 
 export const setFacility = (facilityId) => {
     database.transientState.selectedFacility = facilityId
