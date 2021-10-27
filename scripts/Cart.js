@@ -1,0 +1,1 @@
+// Generate HTML for chosen mineralFacility based on current state

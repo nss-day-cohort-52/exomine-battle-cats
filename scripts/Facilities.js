@@ -1,0 +1,4 @@
+/*
+Generate HTML for facility dropdown based on current state
+Listen for change in user selection and set state based on user input
+*/
