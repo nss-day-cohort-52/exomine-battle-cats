@@ -1,6 +1,7 @@
 // Generate HTML for application
 
 export const Exomine = () => {
+  // This function returns a string of HTML
   return `
   <section class="flex column top-section">
     <div class="header flex row">
