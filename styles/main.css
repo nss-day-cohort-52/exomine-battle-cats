@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Comfortaa%7CPatua+One");
-/* Typography */
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
 
+/* General Typography */
 body,
 button,
 input,
@@ -11,8 +11,133 @@ textarea {
     font-size: 14px;
     line-height: 1.5;
 }
-
 h1,h2,h3,h4,h5,h6 {
-    font-family: "Patua One", serif;
+    font-family: "Comfortaa", Arial, sans-serif;
     letter-spacing: 2px;
+    text-align: center;
+    justify-content: center;
 }
+
+/* Fill browser window. */
+html,
+body,
+main {
+    height: 100%;
+    width: 100%;
+}
+
+/* Default styling for all button elements */
+button {
+    background-color: hotpink;
+    color: white;
+    font-weight:bolder;
+}
+button:disabled {
+    background-color: rgb(160, 113, 137);
+    color: rgb(182, 174, 174);
+    font-weight:bolder;
+    font-style: italic;
+}
+/* Default styling for all select elements */
+select {
+    background-color: #F4FFD9;
+    color: #414BB2;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+select:disabled {
+    background-color: #8E93D5;
+    font-style: italic
+}
+/* Default styling for all radio button elements */
+input[type="radio"] {
+    height: 2rem;
+    width: 2rem;
+}
+input[type="radio"]:checked {
+    height: 2rem;
+    width: 2rem;
+    background-color: #414BB2;
+}
+
+/* Flex Controls */
+.flex {
+    display: flex;
+}
+.row {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+.column {
+    flex-flow: column nowrap;
+}
+
+/* Padding on all containers */
+.container {
+    padding: .5rem;
+}
+
+/* Centers text */
+.text-center {
+    text-align: center
+}
+
+/* Render a pointer over clickable elements */
+.clickable {
+    cursor: pointer;
+}
+
+/* Removes margin/padding from the outermost elements */
+.bottom-section,
+.top-section,
+main.main.container,
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+/* Sets size of the two components in the top section */
+.top-section > .row > .container {
+    width: 40%;
+    height: 100%;
+}
+.top-section > .row {
+    height: 100%;
+}
+/* Sets size of three components in the bottom section */
+.bottom-section > .container {
+    width: 40%;
+    height: 100%;
+}
+/* Styles the header and it's contents */
+.header {
+    font-size: 1.5rem;
+    height: 40%;
+}
+/* Moves the headers a little higher for the top section components */
+.header.row {
+    height: 30%;
+}
+
+/* Sets color scheme and size of the bottom section */
+.bottom-section {
+    background-color: #F4FFD9;
+    color: #2a2e55;
+    height: 55%;
+    width: 100%
+}
+
+/* Sets color scheme and size of the top section */
+.top-section {
+    background-color: #414BB2;
+    color: #F4FFD9;
+    height: 45%;
+    width: 100%
+}
+.governors,
+.facilities {
+    height: 35%
+}
+
+
